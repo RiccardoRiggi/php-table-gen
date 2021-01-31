@@ -168,9 +168,9 @@ if (!function_exists('generaIfUpdate')) {
         echo mandaACapo() . identa() . identa() . identa();
         if ($row["DATA_TYPE"] == "varchar" || $row["DATA_TYPE"] == "date"){
             $apice = "'";
-            echo '$sql = $sql . "' . $row["COLUMN_NAME"] . ' = '.$apice.'".mysqli_real_escape_string($conn,$' . $row["COLUMN_NAME"] . ')."'.$apice.'";';
+            echo '$sql = $sql . "' . $row["COLUMN_NAME"] . ' = '.$apice.'".mysqli_real_escape_string($conn,$' . $row["COLUMN_NAME"] . ')."'.$apice.'';
         }else
-            echo '$sql = $sql . "' . $row["COLUMN_NAME"] . ' = ".mysqli_real_escape_string($conn,$' . $row["COLUMN_NAME"] . ');';
+            echo '$sql = $sql . "' . $row["COLUMN_NAME"] . ' = ".mysqli_real_escape_string($conn,$' . $row["COLUMN_NAME"] . ')."';
     }
 }
 

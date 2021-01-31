@@ -11,17 +11,31 @@ if (!function_exists("generaBloccoUpdateByKey")) {
         echo mandaACapo();
         $result = elencoCampiNonChiave();
         if ($result->num_rows > 0) {
+            $c=2;
             while ($row = $result->fetch_assoc()) {
                 generaIfUpdate($row);
+                if($result->num_rows >= $c ){
+                    echo ',";';
+                }else{
+                    echo '";';
+                }
+                $c++;
             }
         }
         echo mandaACapo().mandaACapo().identa().identa();
-        echo '$sql = $sql . " WHERE 1 = 1 AND ";';
+        echo '$sql = $sql . " WHERE 1 = 1 ";';
         echo mandaACapo().mandaACapo().identa().identa();
         $result = elencoCampiChiave();
         if ($result->num_rows > 0) {
+            $c=2;
             while ($row = $result->fetch_assoc()) {
                 generaIfWhere($row);
+                if($result->num_rows >= $c ){
+                    echo ',";';
+                }else{
+                    echo ';';
+                }
+                $c++;
             }
         }
         

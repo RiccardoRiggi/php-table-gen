@@ -57,23 +57,23 @@
 		$sql = " UPDATE utenti SET ";
 
 		if($nome!=null)
-			$sql = $sql . "nome = '".mysqli_real_escape_string($conn,$nome)."'";
+			$sql = $sql . "nome = '".mysqli_real_escape_string($conn,$nome)."',";
 		if($cognome!=null)
-			$sql = $sql . "cognome = '".mysqli_real_escape_string($conn,$cognome)."'";
+			$sql = $sql . "cognome = '".mysqli_real_escape_string($conn,$cognome)."',";
 		if($data_nascita!=null)
-			$sql = $sql . "data_nascita = '".mysqli_real_escape_string($conn,$data_nascita)."'";
+			$sql = $sql . "data_nascita = '".mysqli_real_escape_string($conn,$data_nascita)."',";
 		if($comune_nascita!=null)
-			$sql = $sql . "comune_nascita = '".mysqli_real_escape_string($conn,$comune_nascita)."'";
+			$sql = $sql . "comune_nascita = '".mysqli_real_escape_string($conn,$comune_nascita)."',";
 		if($isDiplomato!=null)
-			$sql = $sql . "isDiplomato = ".mysqli_real_escape_string($conn,$isDiplomato);
+			$sql = $sql . "isDiplomato = ".mysqli_real_escape_string($conn,$isDiplomato).",";
 		if($isLaureato!=null)
-			$sql = $sql . "isLaureato = ".mysqli_real_escape_string($conn,$isLaureato);
+			$sql = $sql . "isLaureato = ".mysqli_real_escape_string($conn,$isLaureato)."";
 
-		$sql = $sql . " WHERE 1 = 1 AND ";
+		$sql = $sql . " WHERE 1 = 1 ";
 
 		
 		if($id!=null)
-			$sql = $sql . "AND id = ".mysqli_real_escape_string($conn,$id);
+			$sql = $sql . "AND id = ".mysqli_real_escape_string($conn,$id);;
 
 		generaLog($sql);
 
