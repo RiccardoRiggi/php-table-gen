@@ -11,16 +11,17 @@ if(isset($_POST["inserimento"])){
     updateUtentiByKey(apriConnessione(),$_POST["id"],$_POST["nome"],$_POST["cognome"],$_POST["data_nascita"],$_POST["comune_nascita"],$_POST["isDiplomato"],$_POST["isLaureato"]);
 }
 
-$result = selectUtentiByWhere(apriConnessione(),null,null,null,null,null,null,null);
+$result = selectUtentiByWhere(apriConnessione(),null,'R','R',null,null,null,null);
 
-if ($result->num_rows > 0) {
+print_r($result);
+
     echo '<h1>Elenco Utenti</h1>';
     echo '<table>';
-    while ($row = $result->fetch_assoc()) {
+    for ($i = 0; $i < count($result); $i++)  {
+        $row=$result[$i];
         echo '<tr><form action="index.php" method="POST"><td><input type="text" name="id" value="'.$row["id"].'" /></td><td><input type="text" name="nome" value="'.$row["nome"].'" /></td><td><input type="text" name="cognome" value="'.$row["cognome"].'" /></td><td><input type="text" name="data_nascita" value="'.$row["data_nascita"].'" /></td><td><input type="text" name="comune_nascita" value="'.$row["comune_nascita"].'" /></td><td><input type="text" name="isDiplomato" value="'.$row["isDiplomato"].'" /></td><td><input type="text" name="isLaureato" value="'.$row["isLaureato"].'" /></td><td><input type="submit" value="Salva"/></td></form><form action="delete.php" method="POST"><td><input type="hidden" name="id" value="'.$row["id"].'"/><input type="submit" value="Elimina"/></td></form></tr>';
     }
     echo '</table>';
-}
 
 ?>
 

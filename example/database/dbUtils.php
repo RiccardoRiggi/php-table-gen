@@ -3,13 +3,15 @@
 if (!function_exists('apriConnessione')) {
     function apriConnessione()
     {
-        return $conn = new mysqli("localhost", "root", "", "php_table_gen");
+        $conn = new PDO("mysql:host=localhost;dbname=php_table_gen","root", "");
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $conn;
     }
 }
 if (!function_exists('chiudiConnessione')) {
     function chiudiConnessione($conn)
     {
-        $conn->close();
+        $conn=null;
     }
 }
 
