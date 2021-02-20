@@ -5,7 +5,7 @@ if (!function_exists("generaBloccoIniziale")) {
     {
         echo '<?php
         
-        //DAO della tavola "' . NOME_TAVOLA . '" generato con PHP-TABLE-GEN di Riccardo Riggi versione ' . VERSIONE_APPLICAZIONE;
+    //DAO della tavola "' . NOME_TAVOLA . '" generato con PHP-TABLE-GEN di Riccardo Riggi versione ' . VERSIONE_APPLICAZIONE;
     }
 }
 
@@ -166,20 +166,7 @@ if (!function_exists('generaIfUpdate')) {
         echo mandaACapo() . identa() . identa();
         echo 'if($' . $row["COLUMN_NAME"] . '!=null)';
         echo mandaACapo() . identa() . identa() . identa();
-        if ($row["DATA_TYPE"] == "varchar" || $row["DATA_TYPE"] == "date"){
-            $apice = "'";
-            echo '$sql = $sql . "' . $row["COLUMN_NAME"] . ' = '.$apice.'".mysqli_real_escape_string($conn,$' . $row["COLUMN_NAME"] . ')."'.$apice.'';
-        }else
-            echo '$sql = $sql . "' . $row["COLUMN_NAME"] . ' = ".mysqli_real_escape_string($conn,$' . $row["COLUMN_NAME"] . ')."';
-    }
-}
-
-if (!function_exists('generaMysqli_real_escape_stringConDataType')) {
-    function generaMysqli_real_escape_stringConDataType($columnName, $dataType)
-    {
-        if ($dataType == 'varchar') {
-            return "' mysqli_real_escape_string(\$conn,$" . $columnName . ")'";
-        }
+        echo '$sql = $sql . "' . $row["COLUMN_NAME"] . ' = :' . $row["COLUMN_NAME"] . '';
     }
 }
 
@@ -204,33 +191,14 @@ if (!function_exists('generaIfWhereWithSt')) {
     }
 }
 
-if (!function_exists('getBindDataType')) {
-    function getBindDataType($row)
-    {
-        if($row["DATA_TYPE"]=='char' || $row["DATA_TYPE"]=='varchar' || $row["DATA_TYPE"]=='binary' || $row["DATA_TYPE"]=='varbinary' || $row["DATA_TYPE"]=='text' || $row["DATA_TYPE"]=='enum' || $row["DATA_TYPE"]=='set' || $row["DATA_TYPE"]=='date' || $row["DATA_TYPE"]=='time' || $row["DATA_TYPE"]=='datetime'){
-            echo 's';
-        }else if($row["DATA_TYPE"]=='integer' || $row["DATA_TYPE"]=='int' || $row["DATA_TYPE"]=='smallint' || $row["DATA_TYPE"]=='tinyint' || $row["DATA_TYPE"]=='mediumint' || $row["DATA_TYPE"]=='bigint' || $row["DATA_TYPE"]=='timestamp' || $row["DATA_TYPE"]=='year'){
-            echo 'i';
-        }else if($row["DATA_TYPE"]=='float' || $row["DATA_TYPE"]=='double' ){
-            echo 'd';
-        }else if($row["DATA_TYPE"]=='blob' ){
-            echo 'b';
-        }
-    }
-}
-
 if (!function_exists('generaIfInsertValore')) {
     function generaIfInsertValore($row)
     {
         echo mandaACapo() . identa() . identa();
         echo 'if($' . $row["COLUMN_NAME"] . '!=null)';
         echo mandaACapo() . identa() . identa() . identa();
-        if ($row["DATA_TYPE"] == "varchar" || $row["DATA_TYPE"] == "date") {
-            $apice = "'";
-            echo '$sql = $sql ."' . $apice . '".mysqli_real_escape_string($conn,$' . $row["COLUMN_NAME"] . ')."' . $apice . '"';
-        } else {
-            echo '$sql = $sql .mysqli_real_escape_string($conn,$' . $row["COLUMN_NAME"] . ')';
-        }
+        echo '$sql = $sql ." :' . $row["COLUMN_NAME"] . '';
+        
     }
 }
 

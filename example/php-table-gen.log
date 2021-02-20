@@ -1,0 +1,70 @@
+01:43:49 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+01:45:08 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+01:48:27 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND id = ? 
+01:48:28 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND id = ? 
+01:48:29 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND id = ? 
+01:48:44 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND id = ? 
+01:48:44 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND id = ? 
+01:48:45 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND id = ? 
+01:49:40 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = ? 
+01:49:41 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = ? 
+01:52:38 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = ? 
+02:05:01 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+02:06:04 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+02:06:05 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+02:06:17 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+02:06:18 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+02:06:18 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+02:06:48 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:07:13 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:09:25 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:09:26 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:10:50 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:10:51 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:13:21 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:15:16 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:16:18 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:16:51 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:16:56 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:18:00 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:18:01 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:18:03 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:18:21 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:18:22 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:18:27 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:18:31 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:20:02 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:20:27 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:20:37 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:33:54 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome 
+02:34:08 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+02:34:09 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+06:59:26 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+06:59:41 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+06:59:49 20/02/2021 -  UPDATE utenti SET nome = :nome,cognome = :cognome,data_nascita = :data_nascita,comune_nascita = :comune_nascita,isDiplomato = :isDiplomato,isLaureato = :isLaureato WHERE 1 = 1 AND id = :id 
+06:59:49 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+07:00:25 20/02/2021 -  INSERT INTO utenti( nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato ) VALUES (  :nome, :cognome, :data_nascita, :comune_nascita, :isDiplomato, :isLaureato ) 
+07:00:25 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+07:00:44 20/02/2021 -  INSERT INTO utenti( nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato ) VALUES (  :nome, :cognome, :data_nascita, :comune_nascita, :isDiplomato, :isLaureato ) 
+07:00:44 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND nome = :nome AND cognome = :cognome 
+07:01:01 20/02/2021 -  INSERT INTO utenti( nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato ) VALUES (  :nome, :cognome, :data_nascita, :comune_nascita, :isDiplomato, :isLaureato ) 
+07:01:01 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+07:01:07 20/02/2021 -  DELETE FROM utenti  WHERE 1 = 1 AND id = :id 
+07:01:07 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+07:01:09 20/02/2021 -  DELETE FROM utenti  WHERE 1 = 1 AND id = :id 
+07:01:09 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+07:01:10 20/02/2021 -  DELETE FROM utenti  WHERE 1 = 1 AND id = :id 
+07:01:10 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+07:09:10 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+07:11:01 20/02/2021 -  UPDATE utenti SET nome = :nome,cognome = :cognome,data_nascita = :data_nascita,comune_nascita = :comune_nascita,isDiplomato = :isDiplomato,isLaureato = :isLaureato WHERE 1 = 1 AND id = :id 
+07:11:01 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+07:11:07 20/02/2021 -  UPDATE utenti SET nome = :nome,cognome = :cognome,data_nascita = :data_nascita,comune_nascita = :comune_nascita,isDiplomato = :isDiplomato,isLaureato = :isLaureato WHERE 1 = 1 AND id = :id 
+07:11:07 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+07:11:19 20/02/2021 -  INSERT INTO utenti( nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato ) VALUES (  :nome, :cognome, :data_nascita, :comune_nascita, :isDiplomato, :isLaureato ) 
+07:11:19 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+07:11:31 20/02/2021 -  UPDATE utenti SET nome = :nome,cognome = :cognome,data_nascita = :data_nascita,comune_nascita = :comune_nascita,isDiplomato = :isDiplomato,isLaureato = :isLaureato WHERE 1 = 1 AND id = :id 
+07:11:31 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+07:16:58 20/02/2021 -  INSERT INTO utenti( id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato ) VALUES (  :id, :nome, :cognome, :data_nascita, :comune_nascita, :isDiplomato, :isLaureato ) 
+07:16:58 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+07:18:07 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 
+07:18:07 20/02/2021 -  SELECT id,nome,cognome,data_nascita,comune_nascita,isDiplomato,isLaureato FROM utenti WHERE 1 = 1 AND id = :id 

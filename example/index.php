@@ -4,16 +4,16 @@ include './business/utentiBusiness.php';
 include './database/dbUtils.php';
 
 if(isset($_POST["inserimento"])){
-    insertUtentiWithAutoIncrement(apriConnessione(),$_POST["nome"],$_POST["cognome"],$_POST["data_nascita"],$_POST["comune_nascita"],$_POST["isDiplomato"],$_POST["isLaureato"]);
-    //insertUtentiWithKey(apriConnessione(),$_POST["id"],$_POST["nome"],$_POST["cognome"],$_POST["data_nascita"],$_POST["comune_nascita"],$_POST["isDiplomato"],$_POST["isLaureato"]);
+    //insertUtentiWithAutoIncrement(apriConnessione(),$_POST["nome"],$_POST["cognome"],$_POST["data_nascita"],$_POST["comune_nascita"],$_POST["isDiplomato"],$_POST["isLaureato"]);
+    insertUtentiWithKey(apriConnessione(),$_POST["id"],$_POST["nome"],$_POST["cognome"],$_POST["data_nascita"],$_POST["comune_nascita"],$_POST["isDiplomato"],$_POST["isLaureato"]);
 
 }else if(isset($_POST["id"],$_POST["nome"],$_POST["cognome"],$_POST["data_nascita"],$_POST["comune_nascita"],$_POST["isDiplomato"],$_POST["isLaureato"])){
     updateUtentiByKey(apriConnessione(),$_POST["id"],$_POST["nome"],$_POST["cognome"],$_POST["data_nascita"],$_POST["comune_nascita"],$_POST["isDiplomato"],$_POST["isLaureato"]);
 }
 
-$result = selectUtentiByWhere(apriConnessione(),null,'R','R',null,null,null,null);
-
-print_r($result);
+$result = selectUtentiByWhere(apriConnessione(),null,null,null,null,null,null,null);
+//$result = selectUtentiByKey(apriConnessione(),75);
+//print_r($result);
 
     echo '<h1>Elenco Utenti</h1>';
     echo '<table>';

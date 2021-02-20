@@ -19,13 +19,26 @@ if (!function_exists("generaBloccoDeleteByKey")) {
             }
         }
 
-        echo mandaACapo() . mandaACapo() . identa() . identa();
+        echo mandaACapo();
+        echo mandaACapo();
+        echo identa().identa().'$query = $conn->prepare($sql);';
+        echo mandaACapo();
+        $result = elencoCampiChiave();
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                generaIfWhereWithSt($row);
+            }
+        }
+        
+        echo mandaACapo().mandaACapo().identa().identa();
         echo 'generaLog($sql);';
-        echo mandaACapo() . mandaACapo() . identa() . identa();
-        echo '$result = $conn->query($sql);';
-        echo mandaACapo() . identa() . identa();
+        echo mandaACapo().mandaACapo().identa().identa();
+        echo '$query->execute();';
+        echo mandaACapo().mandaACapo().identa().identa();
+        echo '$result = $query->fetchAll(PDO::FETCH_ASSOC);';
+        echo mandaACapo().identa().identa();
         echo 'chiudiConnessione($conn);';
-        echo mandaACapo() . mandaACapo() . identa() . identa();
+        echo mandaACapo().mandaACapo().identa().identa();
         echo 'return $result;';
         echo mandaACapo() . mandaACapo() . identa() . '}';
     }
@@ -50,13 +63,26 @@ if (!function_exists("generaBloccDeleteByWhere")) {
             }
         }
 
-        echo mandaACapo() . mandaACapo() . identa() . identa();
+        echo mandaACapo();
+        echo mandaACapo();
+        echo identa().identa().'$query = $conn->prepare($sql);';
+        echo mandaACapo();
+        $result = elencoCampi();
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                generaIfWhereWithSt($row);
+            }
+        }
+        
+        echo mandaACapo().mandaACapo().identa().identa();
         echo 'generaLog($sql);';
-        echo mandaACapo() . mandaACapo() . identa() . identa();
-        echo '$result = $conn->query($sql);';
-        echo mandaACapo() . identa() . identa();
+        echo mandaACapo().mandaACapo().identa().identa();
+        echo '$query->execute();';
+        echo mandaACapo().mandaACapo().identa().identa();
+        echo '$result = $query->fetchAll(PDO::FETCH_ASSOC);';
+        echo mandaACapo().identa().identa();
         echo 'chiudiConnessione($conn);';
-        echo mandaACapo() . mandaACapo() . identa() . identa();
+        echo mandaACapo().mandaACapo().identa().identa();
         echo 'return $result;';
         echo mandaACapo() . mandaACapo() . identa() . '}';
     }
