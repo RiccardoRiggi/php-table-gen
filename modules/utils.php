@@ -6,6 +6,23 @@ if (!function_exists("generaBloccoIniziale")) {
         echo '<?php
         
     //DAO della tavola "' . NOME_TAVOLA . '" generato con PHP-TABLE-GEN di Riccardo Riggi versione ' . VERSIONE_APPLICAZIONE;
+
+    echo mandaACapo();
+
+    echo generaElencoVariabiliPost();
+    }
+}
+
+if (!function_exists("generaElencoVariabiliPost")) {
+    function generaElencoVariabiliPost()
+    {
+        echo mandaACapo().identa().'//';
+        $result = elencoCampi();
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo '$_POST["'.$row["COLUMN_NAME"].'"],';
+            }
+        }
     }
 }
 

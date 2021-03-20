@@ -11,6 +11,6 @@
     if(!defined("NOME_TAVOLA"))
     define("NOME_TAVOLA","utenti");
     if(!defined("VERSIONE_APPLICAZIONE"))
-    define("VERSIONE_APPLICAZIONE","0.0.2");
+    define("VERSIONE_APPLICAZIONE","0.0.3");
 
 ?>
